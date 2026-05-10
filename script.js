@@ -4,8 +4,9 @@ let targetY = 0;
 const howToPlayButton = document.getElementById("how-to-play-button");
 const rect = howToPlayButton.getBoundingClientRect();
 const startY = rect.y;
+const pathName = window.location.pathname.split("/").pop();
 
-if (window.location.pathname.includes("index.html")) {
+if (window.location.pathname.includes("index.html") || pathName === "index.html") {
 
     localStorage.setItem("homeButtonY", startY);
 
@@ -17,7 +18,7 @@ if (window.location.pathname.includes("index.html")) {
     path = "src/howToPlay.html";
 }
 
-if (window.location.pathname.includes("howToPlay.html")) {
+if (window.location.pathname.includes("howToPlay.html") || pathName === "howToPlay.html") {
 
     const savedY = Number(localStorage.getItem("homeButtonY"));
 
@@ -32,7 +33,7 @@ const deltaY = targetY - startY;
 
 howToPlayButton.addEventListener("click", () => {
 
-    if (window.location.pathname.includes("index.html")) {
+    if (window.location.pathname.includes("index.html") || pathName === "index.html") {
         const el = document.querySelectorAll(".el");
         el.forEach(element => {
             element.style.transition = `opacity ease 0.8s`;
@@ -43,7 +44,7 @@ howToPlayButton.addEventListener("click", () => {
         howToPlayButton.style.border = "none";
     }
 
-    if (window.location.pathname.includes("howToPlay.html")) {
+    if (window.location.pathname.includes("howToPlay.html") || pathName === "howToPlay.html") {
         const el = document.querySelectorAll(".el");
         el.forEach(element => {
             element.style.transition = `opacity ease 0.8s`;
