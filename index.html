@@ -7,16 +7,36 @@ HOME
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Match - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spans.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
 
+    <header class="el">
+        <h1 id="title-page">Welcome to Color Match</h1>
+        <h2 id="how-to-play-str">
+            <p class="description">
+                Color Match is a game that uses the CSS <span class="method">rgb</span><span class="par">(</span><span class="value">x</span>, <span class="value">y</span>, <span class="value">z</span><span class="par">)</span> function, 
+                and in the harder modes <span class="method">rgba</span><span class="par">(</span><span class="value">x</span>, <span class="value">y</span>, <span class="value">z</span>, <span class="value">a</span><span class="par">)</span>.
+            </p>
+            <p class="description">
+                It's recommended to click "<span>How to play</span>"
+                to understand the possible game dynamics.
+            </p>
+        </h2>
     </header>
-    <main>
 
+    <main>
+        <button id="play-button" class="el">PLAY</button>
+        <button id="how-to-play-button" class="selected-button">HOW TO PLAY</button>
     </main>
-    <footer>
-        
+
+    <footer class="el">
+        <h2>
+            This game was inspired by the website <a href="https://dialed.gg/" target="_blank">dialeg.gg</a>, but with a more original twist using CSS.
+        </h2>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

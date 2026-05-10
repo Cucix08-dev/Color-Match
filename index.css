@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header{
+    height: 20dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    margin-top: 50px;
+}
+
+.description{
+    opacity: 0.4;
+
+    cursor: pointer;
+
+    transition: opacity ease 0.5s;
+}
+
+.description:hover{
+    opacity: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40dvh;
+}
+
+button{
+    font-size: clamp(1rem, 3vw, 2rem);
+}
