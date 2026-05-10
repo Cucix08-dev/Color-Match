@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
             targetY = startY;
         }
 
-        path = "src/howToPlay.html";
+        path = "/src/howToPlay.html";
     }
 
     if (isHowToPlay) {
         const savedY = Number(localStorage.getItem("homeButtonY"));
         targetY = Number.isFinite(savedY) ? savedY : startY;
 
-        path = "../index.html";
+        path = "/../index.html";
         howToPlayButton.style.border = "none";
     }
 
