@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             targetY = startY;
         }
 
-        path = "/Color-Match/src/howToPlay.html";
+        path = "src/howToPlay.html";
     }
 
     if (isHowToPlay) {
